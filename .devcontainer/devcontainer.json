@@ -1,6 +1,8 @@
 {
   "name": "NGS Bioinfo",
-  "image": "community.wave.seqera.io/library/fastqc_git:cf2183b876489165",
+  "build": {
+        "dockerfile": "Dockerfile"
+  },
   "remoteUser": "devpod",
   "postCreateCommand": "bash ./.devcontainer/post_create.sh",
   // Required for DinD
