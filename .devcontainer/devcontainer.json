@@ -1,9 +1,7 @@
 {
   "name": "NGS Bioinfo",
-  "build": {
-        "dockerfile": "Dockerfile"
-  },
-  "remoteUser": "devpod",
+  "image": "community.wave.seqera.io/library/fastqc_git:cf2183b876489165",
+  "remoteUser": "root",
   "postCreateCommand": "bash ./.devcontainer/post_create.sh",
   // Required for DinD
   "privileged": true
